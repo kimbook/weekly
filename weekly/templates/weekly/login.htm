@@ -1,0 +1,12 @@
+{% extends 'base.html' %} 
+{% block title %}Welcome ! Login{% endblock%}
+{% block quote %}
+    <script  src='{{ STATIC_URL }}JS/Ext/ext-all-debug.js'></script>
+    <script  src='{{ STATIC_URL }}JS/login.js'></script>
+    <link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}JS/Ext/resources/css/ext-all-debug.css' />
+{% endblock %}
+{% block content %}
+    <div id='csrf'>
+    {% csrf_token %}
+    </div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %} 
+{% block title %}周报系统{% endblock%}
+{% block quote %}
+<link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}calendar/full_demo/reset.css' />
+<link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}calendar/libs/css/smoothness/jquery-ui-1.8.11.custom.css' />
+<link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}calendar/jquery.weekcalendar.css' />
+<link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}calendar/full_demo/demo.css' />
+<link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}calendar/skins/default.css' />
+<script type='text/javascript' src='{{ STATIC_URL }}calendar/libs/jquery-1.4.4.min.js'></script>
+<script type='text/javascript' src='{{ STATIC_URL }}calendar/libs/jquery-ui-1.8.11.custom.min.js'></script>
+<script type="text/javascript" src="{{ STATIC_URL }}calendar/libs/themeswitchertool.js"></script>
+<script>
+	  $(document).ready(function(){
+	    $('#switcher').themeswitcher();
+	  });
+  </script>
+  <script type="text/javascript" src="{{ STATIC_URL }}calendar/libs/date.js"></script>
+  <script type='text/javascript' src='{{ STATIC_URL}}calendar/jquery.weekcalendar.js'></script>
+  <script type='text/javascript' src='{{ STATIC_URL }}calendar/full_demo/demo.js'></script>
+
+{% endblock %}
+{% block content %}
+<h1>{{ welcome }},欢迎使用</h1>
+	<div id="about_button_container">
+		<div id="switcher"></div>
+		<button type="button" id="about_button">About US</button>
+	</div>
+	<div id='calendar'></div>
+	<div id="event_edit_container">
+		<form>
+			<input type="hidden" />
+			<ul>
+				<li>
+					<span>日期: </span><span class="date_holder"></span> 
+				</li>
+				<li>
+					<label for="start">开始时间: </label><select name="start"><option value="">Select Start Time</option></select>
+				</li>
+				<li>
+					<label for="end">截止时间: </label><select name="end"><option value="">Select End Time</option></select>
+				</li>
+				<li>
+					<label for="title">标题: </label><input type="text" name="title" />
+				</li>
+				<li>
+					<label for="body">内容: </label><textarea name="body"></textarea>
+				</li>
+			</ul>
+		</form>
+	</div>
+	<div id="about">
+        <h2>联勇同创-周报系统</h2>
+        <ul>
+            <li>
+            </li>
+        </ul>
+	</div>
+    <div id="memo">
+    </div>
+{% endblock %}
+

@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	padding: 0;
+	background:url(../images/bg.png) repeat;
+	font-family: 'Verdana';
+	color: #40454B;
+	font-size: 12px;
+	background-attachment: fixed;
+}
+.main{
+	text-align:center;
+}
+.login{
+	margin:10% auto;
+	padding:20px 30px;
+	background:#FFF;
+	width:350px;
+	height:150px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.login_notice{
+	margin:10px;
+}
+.login_center{
+    text-align:center;
+    padding:10px;
+}
+.btn{
+    cursor:pointer;
+    width:70px;
+    height:25px;
+}
+.home_main{
+    text-align:center;
+}
+.menu_left{
+    float:left;
+    margin:30px;
+    width:220px;
+    height:580px;
+    border-radius:10px;
+    background:#fff
+}
+.cosplay{
+    float:left;
+    margin:30px;
+    width:700px;
+    height:580px;
+    border-radius:10px;
+    background:#fff
+}
